@@ -23,4 +23,4 @@ with open ( 'nmea_source_filename' , 'r' ) as f :
         com.write ( line.encode() )
         time.sleep ( 0.1 )
 # Zamknij port szeregowy
-ser.close ()
+my_serial.close_serial_ports ( com )
