@@ -12,11 +12,11 @@ def set_serials_cfg ( com , b , s ) :
                 com.port = '/dev/' + s_p.name
             else:
                 print ( f"Error: No compatible os!")
-    com.baudrate       = b
-    com.bytesize       = serial.EIGHTBITS
-    com.parity         = serial.PARITY_NONE
-    com.stopbits       = serial.STOPBITS_ONE
-    com.write_timeout  = 1
+    com.baudrate    = b
+    com.bytesize    = serial.EIGHTBITS
+    com.parity      = serial.PARITY_NONE
+    com.stopbits    = serial.STOPBITS_ONE
+    com.timeout     = 0.1
 
 def close_serial_ports ( com ) :
     if com.is_open :
