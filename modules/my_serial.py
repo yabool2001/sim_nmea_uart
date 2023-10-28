@@ -2,10 +2,10 @@ import platform
 import serial
 import serial.tools.list_ports
 
-def set_serials_cfg ( com , b ) :
+def set_serials_cfg ( com , b , s ) :
     serial_ports =  serial.tools.list_ports.comports()
     for s_p in serial_ports:
-        if 'CP2105'.lower () in s_p.description.lower () and 'Standard'.lower () in s_p.description.lower ():
+        if s.lower () in s_p.description.lower () :
             if platform.system () == "Windows":
                 com.port = s_p.name
             elif platform.system () == "Linux":
