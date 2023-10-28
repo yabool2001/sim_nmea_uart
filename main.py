@@ -9,7 +9,8 @@ import modules.my_serial as my_serial
 
 #nmea_source_filename = "source/2023.10.01.22.57_L86.txt"
 #nmea_source_filename = "source/2023.10.28.03_L86.bin"
-nmea_source_filename = "source/2023.10.28.04_L86.bin"
+#nmea_source_filename = "source/2023.10.28.04_L86.bin"
+nmea_source_filename = "source/2023.10.28.04-1_L86.bin"
 
 # Otwórz port szeregowy COM
 com = serial.Serial ()
